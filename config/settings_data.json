@@ -13,6 +13,7 @@
     "dark_mode_toggle": false,
     "type_header_font": "inter_n6",
     "heading_h1_scale": 100,
+    "heading_h2_scale": 100,
     "type_header_letter_spacing": -0.5,
     "type_header_line_height": 1.2,
     "heading_text_transform": "none",
