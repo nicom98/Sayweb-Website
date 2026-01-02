@@ -35,11 +35,23 @@
             "icon_style": "colored",
             "icon_fill_type": "gradient"
           }
+        },
+        "announcement_slide_NwRfJL": {
+          "type": "announcement_slide",
+          "settings": {
+            "color_scheme": "background-3",
+            "text": "★ ★ ★ ★ ★ +20 zufriedene Kunden",
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
         }
       },
       "block_order": [
         "announcement_slide_dW4Jed",
-        "announcement_slide_EJRPwJ"
+        "announcement_slide_EJRPwJ",
+        "announcement_slide_NwRfJL"
       ],
       "settings": {
         "height": 45,
