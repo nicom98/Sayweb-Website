@@ -55,7 +55,7 @@
         "enable_copyright_shopname": true,
         "menu_bottom": "",
         "show_policy": true,
-        "enable_follow_on_shop": true
+        "enable_follow_on_shop": false
       }
     }
   },
