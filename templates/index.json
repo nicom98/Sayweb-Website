@@ -1117,9 +1117,9 @@
           "type": "step",
           "settings": {
             "number": "",
-            "heading": "Here can be your story title",
-            "text": "Simply complete this step to get started!",
-            "show_button": true,
+            "heading": "Erst­ge­spräch",
+            "text": "In einem 30 bis 60-minütigen Erstgespräch gestalten wir den Grundstein für unsere Zusammenarbeit. Gemeinsam entwickeln wir ein klares Bild Deiner Bedürfnisse, Ziele und Zielgruppen durch gezielte Fragen.",
+            "show_button": false,
             "button_style": "simple",
             "button_label": "Know More",
             "button_link": ""
@@ -1129,9 +1129,9 @@
           "type": "step",
           "settings": {
             "number": "",
-            "heading": "Here can be your story title",
-            "text": "Simply complete this step to get started!",
-            "show_button": true,
+            "heading": "Angebots­präsen­tation",
+            "text": "In einem persönlichen Gespräch oder per Videokonferenz präsentieren wir ein umfassendes Angebot, klären Details und beantworten gerne alle Deine Fragen.",
+            "show_button": false,
             "button_style": "simple",
             "button_label": "Know More",
             "button_link": ""
@@ -1141,9 +1141,9 @@
           "type": "step",
           "settings": {
             "number": "",
-            "heading": "Here can be your story title",
-            "text": "Simply complete this step to get started!",
-            "show_button": true,
+            "heading": "Projekt­realisie­rung",
+            "text": "Nach Deinem Einverständnis starten wir das Projekt. Dabei stehen wir im ständigen Austausch und sorgen für einen reibungslosen Ablauf.",
+            "show_button": false,
             "button_style": "simple",
             "button_label": "Know More",
             "button_link": ""
