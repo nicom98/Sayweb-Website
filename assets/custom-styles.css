@@ -1,5 +1,5 @@
 :root {
-    --background-dark-purple: #011624;
+    --background-dark-purple: #0E0C19;
     --font-heading-h1-scale: 0.9;
     --font-heading-h5-scale: 0.7;
 }
@@ -426,9 +426,9 @@ border-radius: 100%;
 .badge--custom.color-background-1,
 .badge--custom.color-background-2,
 .badge--custom.color-background-3 {
-  background-color: #011624;
+  background-color: var(--background-dark-purple);
   color: #FFFFFF;
-  border-color: #011624;
+  border-color: var(--background-dark-purple);
 }
 
 .badge.badge--custom .icon,
