@@ -17,7 +17,7 @@
         "footer-0": {
           "type": "logo_info",
           "settings": {
-            "logo": "{{ shop.brand.logo }}",
+            "logo": "shopify://shop_images/Sayweb-Logodesign-weiss_Zeichenflaeche-1.png",
             "logo_width": 150,
             "description": ""
           }
