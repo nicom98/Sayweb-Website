@@ -34,6 +34,18 @@
 					></i>
 				</div>
 			{%- endif -%}
+			{%- if section.settings.heading_image != blank -%}
+				<div class='aic__heading-image'>
+					{{
+						section.settings.heading_image
+						| image_url: width: 800
+						| image_tag:
+							loading: 'lazy',
+							widths: '200, 400, 600, 800, 1000, 1200',
+							sizes: '(min-width: 1200px) 400px, (min-width: 750px) 300px, 200px'
+					}}
+				</div>
+			{%- endif -%}
 			<div class='aic__text-wrapper'>
 				{% render 'section-text',
 					section: section,
@@ -1382,6 +1394,11 @@
 			],
 			"default": "none",
 			"label": "t:sections.all.subheading_icon.label"
+		},
+		{
+			"type": "image_picker",
+			"id": "heading_image",
+			"label": "Heading image"
 		},
 		{
 			"type": "inline_richtext",
