@@ -37,24 +37,12 @@
             "menu": "seo-sea",
             "default_open": false
           }
-        },
-        "footer-3": {
-          "type": "subscribe",
-          "settings": {
-            "color_scheme_subscribe": "",
-            "enable_box_shadow": true,
-            "heading": "Subscribe for Updates",
-            "text": "Join us to get the latest updates, special offers, and exclusive content sent right to your inbox!",
-            "additional_text": "",
-            "button_style": "primary"
-          }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "footer-2",
-        "footer-3"
+        "footer-2"
       ],
       "settings": {
         "color_scheme": "background-3",
