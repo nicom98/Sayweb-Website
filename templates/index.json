@@ -1382,13 +1382,31 @@
             "answer": "<p>Ja, wir bieten langfristigen Support und kontinuierliche Optimierung für Deinen Shopify-Shop an. Außerdem arbeiten wir als <a href=\"/pages/shopify-entwickler\" title=\"Shopify Entwickler\">Shopify Theme Entwickler</a>. Unser Ziel ist immer eine langfristige Partnerschaft mit unseren Kunden.</p>",
             "opened": false
           }
+        },
+        "accordion_wjfXwt": {
+          "type": "accordion",
+          "settings": {
+            "question": "Kann ich meinen Shopify Shop nach meiner Zusammenarbeit mit euch selbstständig pflegen?",
+            "answer": "<p>Ja, durch die intuitive und einfache Handhabung von Shopify kannst Du Dinge wie Produkte hinzufügen und verwalten selbstständig erledigen. Komplexere Anliegen übernehmen wir gerne für Dich.</p>",
+            "opened": false
+          }
+        },
+        "accordion_66drLH": {
+          "type": "accordion",
+          "settings": {
+            "question": "Könnt ihr bestehende Shopify-Shops optimieren oder erweitern?",
+            "answer": "<p>Ja, schick uns gerne eine Anfrage und wir zeigen Dir Optimierungspotenziale auf oder beraten Dich zu Deinem individuellen Anliegen. Wir bieten ebenfalls <a href=\"/pages/shopify-ab-testing-agentur\" title=\"Shopify AB Test\">AB-Testing</a> und an.</p>",
+            "opened": false
+          }
         }
       },
       "block_order": [
         "accordion_HAqUEB",
         "accordion_HqArJh",
         "accordion_rEqjD4",
-        "accordion_7rDa6Q"
+        "accordion_7rDa6Q",
+        "accordion_wjfXwt",
+        "accordion_66drLH"
       ],
       "name": "t:sections.collapsible-content.name",
       "settings": {
