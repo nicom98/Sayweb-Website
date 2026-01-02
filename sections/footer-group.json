@@ -17,6 +17,7 @@
         "footer-0": {
           "type": "logo_info",
           "settings": {
+            "logo": "{{ shop.brand.logo }}",
             "logo_width": 105,
             "description": "Bringing you exceptional quality and thoughtful design—crafted to elevate your daily life and deliver inspiration every moment."
           }
