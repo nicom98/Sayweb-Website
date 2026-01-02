@@ -1,13 +1,14 @@
 {% comment %}
-		Renders a product card
-		Accepts:
-		- product_card_product: {Object} Product Liquid object (optional)
-		- show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
-		- show_vendor: {Boolean} Show the product vendor. Default: true
-		- show_desc: {Boolean} Show the product vendor. Default: false
-		- section_id: {String} The ID of the section that contains this card.
-		Usage:
-	{% render 'product-card', show_vendor: section.settings.show_vendor %}
+	Renders a product card
+	Accepts:
+	- product_card_product: {Object} Product Liquid object (optional)
+	- show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+	- show_vendor: {Boolean} Show the product vendor. Default: true
+	- show_desc: {Boolean} Show the product vendor. Default: false
+	- show_price: {Boolean} Show the product price. Default: true (optional)
+	- section_id: {String} The ID of the section that contains this card.
+	Usage:
+{% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
 {% liquid %}
@@ -392,7 +393,9 @@
 					{% endif %}
 				{% endif %}
 			</div>
-			{% render 'price', product: product_card_product, price_class: '' %}
+			{%- if show_price != false -%}
+				{% render 'price', product: product_card_product, price_class: '' %}
+			{%- endif -%}
 			<div class="product-parameters">
 				{%- unless product_card_product.has_only_default_variant -%}
 					{%- for option in product_card_product.options_with_values -%}

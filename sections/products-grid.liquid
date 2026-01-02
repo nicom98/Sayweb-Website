@@ -188,6 +188,7 @@
 									show_secondary_image: section.settings.show_secondary_image,
 									show_vendor: section.settings.show_vendor,
 									show_desc: section.settings.show_desc,
+									show_price: section.settings.show_price,
 									columns: section.settings.columns,
 									section_id: section.id,
 									add_id: forloop.index
@@ -243,11 +244,17 @@
 		{
 			"type": "range",
 			"id": "products_per_page",
-			"min": 4,
+			"min": 3,
 			"max": 50,
 			"step": 1,
 			"default": 12,
 			"label": "t:sections.products-grid.settings.products_per_page.label"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_price",
+			"default": true,
+			"label": "Show price"
 		},
 		{
 			"type": "range",
