@@ -21,11 +21,14 @@
     {%- if section.settings.enable_search -%}
       {% render 'header-search', section: section %}
     {%- endif -%}
+
+    {%  comment %}
     {%- if shop.customer_accounts_enabled -%}
       {% render 'header-account' %}
     {%- endif -%}
 
     {% render 'header-cart' %}
+     {% endcomment %}
 
     {% render 'header-custom-button', section: section %}
   </div>
