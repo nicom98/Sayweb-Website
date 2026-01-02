@@ -1,0 +1,10 @@
+{%- if section.settings.enable_custom_button and section.settings.custom_button_text != blank -%}
+    <div class="header__custom-button-wrapper">
+      {% render 'button', 
+        link: section.settings.custom_button_link, 
+        label: section.settings.custom_button_text, 
+        style: section.settings.custom_button_style,
+        class: 'header-custom'
+      %}
+    </div>
+  {%- endif -%}

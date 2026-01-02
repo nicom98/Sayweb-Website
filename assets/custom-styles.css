@@ -1,3 +1,7 @@
+:root {
+    --background-dark-purple: #011624;
+}
+
 @media (min-width: 1360px) {
     .container-xxl, .shopify-policy__container-xxl, .container-xl, .shopify-policy__container-xl, .container-lg, .shopify-policy__container-lg, .container-md, .shopify-policy__container-md, .container-sm, .shopify-policy__container-sm, .container, .shopify-policy__container {
         max-width: 1450px;
@@ -49,3 +53,108 @@ font-weight: 400;
 .multicolumn-card__image-wrapper--image img {
 border-radius: 100%;
 }
+
+/* Announcements nebeneinander mit justify-content: space-between */
+.announcement-bar {
+    background-color: var(--background-dark-purple);
+}
+
+.announcement-bar__wrapper {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.announcement-bar:not(.swiper) .announcement-bar__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+    padding-inline: 0;
+}
+
+.announcement-bar:not(.swiper) .announcement-bar__message {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+/* Text auf einer Flucht mit dem Header - gleiche Padding-Werte */
+.announcement-bar:not(.swiper) .announcement-bar__message-wrapper {
+    padding-inline: 2rem;
+    justify-content: flex-start;
+}
+
+/* Erstes Announcement: linksbündig (flex-start) */
+.announcement-bar:not(.swiper) .announcement-bar__message:nth-child(1) .announcement-bar__message-wrapper {
+    justify-content: flex-start;
+}
+
+/* Zweites Announcement: zentriert */
+.announcement-bar:not(.swiper) .announcement-bar__message:nth-child(2) .announcement-bar__message-wrapper {
+    justify-content: center;
+}
+
+/* Drittes Announcement: rechtsbündig */
+.announcement-bar:not(.swiper) .announcement-bar__message:nth-child(3) .announcement-bar__message-wrapper {
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 1200px) {
+    .announcement-bar:not(.swiper) .announcement-bar__message-wrapper {
+        padding-inline: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .announcement-bar:not(.swiper) .announcement-bar__message-wrapper {
+        padding-inline: 6.4rem;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .announcement-bar:not(.swiper) {
+        max-width: 100%;
+    }
+    
+    .announcement-bar:not(.swiper) .announcement-bar__wrapper {
+        flex-direction: column;
+        gap: 0;
+        padding-inline: 0;
+    }
+    
+    .announcement-bar:not(.swiper) .announcement-bar__message {
+        width: 100%;
+    }
+    
+    .announcement-bar:not(.swiper) .announcement-bar__message-wrapper {
+        padding-inline: 2rem;
+        justify-content: center;
+    }
+}
+
+/* Header Custom Button Styles */
+.header__custom-button-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 1.6rem;
+  }
+  
+  .header__icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Button rechts platzieren */
+  .header__column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* Responsive: Auf mobilen Geräten */
+  @media screen and (max-width: 1099px) {
+    .header__custom-button-wrapper {
+      display: none;
+    }
+  }

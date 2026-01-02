@@ -428,6 +428,51 @@
 			"info": "t:sections.header.settings.enable_search.info"
 		},
 		{
+			"type": "header",
+			"content": "Custom Button"
+		  },
+		  {
+			"type": "checkbox",
+			"id": "enable_custom_button",
+			"default": false,
+			"label": "Enable custom button"
+		  },
+		  {
+			"type": "text",
+			"id": "custom_button_text",
+			"label": "Button text",
+			"default": "Button"
+		  },
+		  {
+			"type": "url",
+			"id": "custom_button_link",
+			"label": "Button link"
+		  },
+		  {
+			"type": "select",
+			"id": "custom_button_style",
+			"options": [
+			  {
+				"value": "primary",
+				"label": "Primary"
+			  },
+			  {
+				"value": "secondary",
+				"label": "Secondary"
+			  },
+			  {
+				"value": "tertiary",
+				"label": "Tertiary"
+			  },
+			  {
+				"value": "simple",
+				"label": "Simple"
+			  }
+			],
+			"default": "primary",
+			"label": "Button style"
+		  },
+		{
 			"type": "color_scheme",
 			"id": "search_color_scheme",
 			"default": "background-2",

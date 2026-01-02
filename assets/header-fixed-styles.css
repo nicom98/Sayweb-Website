@@ -1,0 +1,164 @@
+/* assets/header-fixed-styles.css */
+
+/* Verhindert, dass der Header beim Scrollen versteckt wird - maximale Spezifität */
+#shopify-section-header.shopify-section-header-hidden,
+#shopify-section-header.shopify-section-header.shopify-section-header-hidden,
+.shopify-section-header.shopify-section-header-hidden,
+body #shopify-section-header.shopify-section-header-hidden {
+  transform: translateY(0) translateZ(0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  position: relative !important;
+  top: auto !important;
+}
+
+/* Verhindert sticky-Position und behält normales Verhalten */
+#shopify-section-header.shopify-section-header-sticky,
+#shopify-section-header.shopify-section-header.shopify-section-header-sticky,
+.shopify-section-header.shopify-section-header-sticky,
+body #shopify-section-header.shopify-section-header-sticky {
+  position: relative !important;
+  top: auto !important;
+  z-index: 2;
+  transform: translateY(0) translateZ(0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Überschreibt alle möglichen Kombinationen - Header muss immer sichtbar sein */
+#shopify-section-header.shopify-section-header-sticky.shopify-section-header-hidden,
+#shopify-section-header.shopify-section-header.shopify-section-header-sticky.shopify-section-header-hidden,
+.shopify-section-header-sticky.shopify-section-header-hidden,
+body #shopify-section-header.shopify-section-header-sticky.shopify-section-header-hidden {
+  transform: translateY(0) translateZ(0) !important;
+  position: relative !important;
+  top: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Header-Wrapper behält normales Padding und Verhalten */
+#shopify-section-header.shopify-section-header-sticky .header-wrapper,
+.shopify-section-header-sticky .header-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Header behält normales Aussehen auch wenn sticky-Klasse vorhanden */
+#shopify-section-header.shopify-section-header-sticky .header-wrapper.container,
+.shopify-section-header-sticky .header-wrapper.container {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header,
+.shopify-section-header-sticky .header-wrapper.container .header {
+  position: relative;
+  padding-inline: 2rem;
+  max-width: 100%;
+  border-radius: 0.6rem;
+  box-shadow: 0px 8px 30px 0px rgba(var(--color-shadow), 0.08);
+  margin-top: 1.6rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header,
+  .shopify-section-header-sticky .header-wrapper.container .header {
+    padding-inline: 3.2rem;
+    margin-top: 3.2rem;
+    box-shadow: 0px 8px 40px 0px rgba(var(--color-shadow), 0.08);
+    border-radius: 1.2rem;
+    max-width: 100%;
+  }
+}
+
+/* Mega-Menus behalten normale Position */
+@media screen and (min-width: 990px) {
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-3,
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-4,
+  .shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-3,
+  .shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-4 {
+    left: auto;
+    right: auto;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-3,
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-4,
+  .shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-3,
+  .shopify-section-header-sticky .header-wrapper.container .header .mega-menu--columns-4 {
+    right: auto;
+  }
+}
+
+/* Search-Inner behält normale Position */
+#shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header__search-inner,
+.shopify-section-header-sticky .header-wrapper.container .header__search-inner {
+  right: auto;
+  left: auto;
+}
+
+@media screen and (min-width: 750px) {
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header__search-inner,
+  .shopify-section-header-sticky .header-wrapper.container .header__search-inner {
+    left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container .header__search-inner,
+  .shopify-section-header-sticky .header-wrapper.container .header__search-inner {
+    right: auto;
+  }
+}
+
+/* Menu-Drawer behält normale Position und Styling */
+#shopify-section-header.shopify-section-header-sticky .header-wrapper.container .menu-drawer,
+.shopify-section-header-sticky .header-wrapper.container .menu-drawer {
+  left: 2rem;
+  right: 2rem;
+  width: auto;
+  top: auto;
+  bottom: auto;
+  box-shadow: 0px 8px 40px 0px rgba(var(--color-shadow), 0.08);
+  border-radius: 0.6rem;
+}
+
+#shopify-section-header.shopify-section-header-sticky .menu-drawer,
+.shopify-section-header-sticky .menu-drawer {
+  height: auto;
+}
+
+/* Entfernt Transition-Animationen beim Scrollen */
+#shopify-section-header.shopify-section-header.animate,
+.shopify-section-header.animate {
+  transition: none;
+}
+
+/* Stellt sicher, dass der Header immer sichtbar ist und normale Position hat */
+#shopify-section-header.shopify-section-header,
+.shopify-section-header {
+  transform: translateY(0) translateZ(0);
+  position: relative;
+  top: auto;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+/* Überschreibt border-radius für container header-wrapper */
+#shopify-section-header.shopify-section-header-sticky .header-wrapper.container,
+.shopify-section-header-sticky .header-wrapper.container {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  #shopify-section-header.shopify-section-header-sticky .header-wrapper.container,
+  .shopify-section-header-sticky .header-wrapper.container {
+    border-radius: 0;
+  }
+}
