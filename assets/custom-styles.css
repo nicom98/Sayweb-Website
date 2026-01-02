@@ -193,7 +193,7 @@ border-radius: 100%;
   
   .aic__icon-text-header {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 1.2rem;
   }
   
@@ -202,10 +202,43 @@ border-radius: 100%;
     align-items: center;
     justify-content: center;
     flex: none;
+    font-size: 2.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .aic__icon-text-icon {
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .aic__icon-text-icon {
+      font-size: 3.2rem;
+    }
+  }
+  
+  .aic__icon-text-icon .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .aic__icon-text-icon .icon {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .aic__icon-text-icon .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
   }
   
   .aic__icon-text-heading {
     margin: 0;
+    line-height: 1.4;
   }
   
   .aic__icon-text-text {

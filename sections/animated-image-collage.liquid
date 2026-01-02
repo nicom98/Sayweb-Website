@@ -18,7 +18,9 @@
 	class='aic aic--{% if section.settings.section_type == 'background' %}background color-{{ section.settings.color_scheme }} background {% elsif section.settings.section_type == 'right' %}right{% elsif section.settings.section_type == 'bottom' %}bottom{% endif %} {% if section.settings.full_width != true %}container{% endif %} {% if section.settings.header_overlay %}section--has-overlay {% if section.settings.header_transparent %} section--header-light {% endif %} {% endif %}'
 	style='--aic-opacity: {{ section.settings.opacity_overlay }}'
 >
-	<div class='aic__wrapper {% if section.settings.section_type == 'background' %}container{% endif %} {% if section.settings.section_type != 'background' %}color-{{ section.settings.color_scheme }}{% endif %} section-{{ section.id }}-padding'>
+		{%- comment -%} Filter only column blocks for images {%- endcomment -%}
+		{%- assign image_blocks = section.blocks | where: 'type', 'column' -%}
+		<div class='aic__wrapper {% if section.settings.section_type == 'background' %}container{% endif %} {% if section.settings.section_type != 'background' %}color-{{ section.settings.color_scheme }}{% endif %} section-{{ section.id }}-padding'>
 		<div class='aic__info {% if section.settings.section_type != 'background' %}container{% endif %}'>
 			{%- if section.settings.icon != 'none' -%}
 				<div
@@ -109,76 +111,76 @@
 
 		<div class='aic__marquees'>
 			{% case section.settings.section_type %}
-				{% when 'background' %}
-					{% assign columns = section.settings.column_to_show %}
-					{% assign counter = 1 %}
-					{% assign limit = section.blocks.size | divided_by: columns %}
-					{% comment %} For every column there's a single marquee {% endcomment %}
-					{% for i in (1..columns) %}
-						<div class='aic__marquee content' data-slides='{{ limit }}'>
-							{% comment %} Every marquee must start with a slide, not necessarily with the first index, but with a following one. {% endcomment %}
-							{% for y in (counter..section.blocks.size) limit: limit %}
-								{% for block in section.blocks %}
-									{% assign collection_index = forloop.index0 | modulo: 3 | plus: 1 %}
-									{% if forloop.index == y %}
-										{% render 'aic-item',
-											image: block.settings.image,
-											section: section,
-											section_index: section.index,
-											index: forloop.index,
-											block: block,
-											width: 745,
-											collection_index: collection_index
-										%}
-									{% endif %}
-								{% endfor %}
+			{% when 'background' %}
+				{% assign columns = section.settings.column_to_show %}
+				{% assign counter = 1 %}
+				{% assign limit = image_blocks.size | divided_by: columns %}
+				{% comment %} For every column there's a single marquee {% endcomment %}
+				{% for i in (1..columns) %}
+					<div class='aic__marquee content' data-slides='{{ limit }}'>
+						{% comment %} Every marquee must start with a slide, not necessarily with the first index, but with a following one. {% endcomment %}
+						{% for y in (counter..image_blocks.size) limit: limit %}
+							{% for block in image_blocks %}
+								{% assign collection_index = forloop.index0 | modulo: 3 | plus: 1 %}
+								{% if forloop.index == y %}
+									{% render 'aic-item',
+										image: block.settings.image,
+										section: section,
+										section_index: section.index,
+										index: forloop.index,
+										block: block,
+										width: 745,
+										collection_index: collection_index
+									%}
+								{% endif %}
 							{% endfor %}
-						</div>
-						{% comment %} E.g. counter = 1, limit = 3, so in the 1st marquee there will be 1st, 2nd, 3rd slides, and in the 2nd marquee there will be 4th, 5th, 6th slides, and so on {% endcomment %}
-						{% assign counter = counter | plus: limit %}
-					{% endfor %}
-				{% when 'right' %}
-					{% assign counter = 1 %}
-					{% assign limit = section.blocks.size | divided_by: 2 %}
-					{% comment %} For every column there's a single marquee {% endcomment %}
-					{% for i in (1..2) %}
-						<div class='aic__marquee content' data-slides='{{ limit }}'>
-							{% comment %} Every marquee must start with a slide, not necessarily with the first index, but with a following one. {% endcomment %}
-							{% for y in (counter..section.blocks.size) limit: limit %}
-								{% for block in section.blocks %}
-									{% assign collection_index = forloop.index0 | modulo: 3 | plus: 1 %}
-									{% if forloop.index == y %}
-										{% render 'aic-item',
-											image: block.settings.image,
-											section: section,
-											section_index: section.index,
-											index: forloop.index,
-											block: block,
-											width: 575,
-											collection_index: collection_index
-										%}
-									{% endif %}
-								{% endfor %}
-							{% endfor %}
-						</div>
-						{% comment %} E.g. counter = 1, limit = 3, so in the 1st marquee there will be 1st, 2nd, 3rd slides, and in the 2nd marquee there will be 4th, 5th, 6th slides, and so on {% endcomment %}
-						{% assign counter = counter | plus: limit %}
-					{% endfor %}
-				{% when 'bottom' %}
-					<div class='aic__marquee-horizontal content' data-duplicated='true'>
-						{% for block in section.blocks %}
-							{% assign collection_index = forloop.index0 | modulo: 3 | plus: 1 %}
-							{% render 'aic-item',
-								image: block.settings.image,
-								section: section,
-								width: block.settings.image_width,
-								block: block,
-								index: forloop.index,
-								section_index: section.index,
-								collection_index: collection_index
-							%}
 						{% endfor %}
 					</div>
+					{% comment %} E.g. counter = 1, limit = 3, so in the 1st marquee there will be 1st, 2nd, 3rd slides, and in the 2nd marquee there will be 4th, 5th, 6th slides, and so on {% endcomment %}
+					{% assign counter = counter | plus: limit %}
+				{% endfor %}
+			{% when 'right' %}
+				{% assign counter = 1 %}
+				{% assign limit = image_blocks.size | divided_by: 2 %}
+				{% comment %} For every column there's a single marquee {% endcomment %}
+				{% for i in (1..2) %}
+					<div class='aic__marquee content' data-slides='{{ limit }}'>
+						{% comment %} Every marquee must start with a slide, not necessarily with the first index, but with a following one. {% endcomment %}
+						{% for y in (counter..image_blocks.size) limit: limit %}
+							{% for block in image_blocks %}
+								{% assign collection_index = forloop.index0 | modulo: 3 | plus: 1 %}
+								{% if forloop.index == y %}
+									{% render 'aic-item',
+										image: block.settings.image,
+										section: section,
+										section_index: section.index,
+										index: forloop.index,
+										block: block,
+										width: 575,
+										collection_index: collection_index
+									%}
+								{% endif %}
+							{% endfor %}
+						{% endfor %}
+					</div>
+					{% comment %} E.g. counter = 1, limit = 3, so in the 1st marquee there will be 1st, 2nd, 3rd slides, and in the 2nd marquee there will be 4th, 5th, 6th slides, and so on {% endcomment %}
+					{% assign counter = counter | plus: limit %}
+				{% endfor %}
+			{% when 'bottom' %}
+				<div class='aic__marquee-horizontal content' data-duplicated='true'>
+					{% for block in image_blocks %}
+						{% assign collection_index = forloop.index0 | modulo: 3 | plus: 1 %}
+						{% render 'aic-item',
+							image: block.settings.image,
+							section: section,
+							width: block.settings.image_width,
+							block: block,
+							index: forloop.index,
+							section_index: section.index,
+							collection_index: collection_index
+						%}
+					{% endfor %}
+				</div>
 			{% endcase %}
 		</div>
 	</div>
