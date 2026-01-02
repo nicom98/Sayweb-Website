@@ -50,36 +50,50 @@
 					%}
 				{% endif %}
 			</div>
-			{%- comment -%} Icon with Text Blocks {%- endcomment -%}
+			{%- comment -%} Image Gallery with Links {%- endcomment -%}
 			{%- if section.blocks.size > 0 -%}
-				{%- assign icon_text_blocks = section.blocks | where: 'type', 'icon_with_text' -%}
-				{%- if icon_text_blocks.size > 0 -%}
-					<div class='aic__icon-text-blocks'>
-						{%- for block in icon_text_blocks -%}
-							<div class='aic__icon-text-item' {{ block.shopify_attributes }}>
-								<div class='aic__icon-text-header'>
-									{%- if block.settings.icon != 'none' -%}
-										<div
-											class='aic__icon-text-icon aic__icon-text-icon--{{- section.settings.icon_size }} {% if section.settings.box_shadow %}aic__icon-text-icon--shadow{% endif %} aic__icon-text-icon--{{- section.settings.icon_style }} aic__icon-text-icon--{{- block.settings.icon_fill_type }}'
-										>
-											<i
-												class='icon icon-pack icon-{{ block.settings.icon }} {% if section.settings.icon_style == 'colored' and block.settings.icon_fill_type == 'gradient' %} text-gradient {% endif %}'
-											></i>
+				{%- assign image_link_blocks = section.blocks | where: 'type', 'image_link' -%}
+				{%- if image_link_blocks.size > 0 -%}
+					<div class='aic__image-gallery'>
+						<div class='aic__image-gallery-images'>
+							{%- for block in image_link_blocks -%}
+								{%- if block.settings.image != blank -%}
+									<a
+										href='{{ block.settings.link }}'
+										class='aic__image-gallery-item'
+										{{ block.shopify_attributes }}
+										{% if block.settings.link != blank and block.settings.link.type == 'external_link' %}
+											target='_blank'
+											rel='noopener noreferrer'
+										{% endif %}
+									>
+										<div class='aic__image-gallery-image'>
+											{{
+												block.settings.image
+												| image_url: width: 200
+												| image_tag:
+													loading: 'lazy',
+													widths: '100, 150, 200, 300',
+													sizes: '(min-width: 1200px) 200px, 150px'
+											}}
 										</div>
-									{%- endif -%}
-									{%- if block.settings.heading != blank -%}
-										<div class='aic__icon-text-heading h5'>
-											{{ block.settings.heading }}
-										</div>
-									{%- endif -%}
-								</div>
-								{%- if block.settings.text != blank -%}
-									<div class='aic__icon-text-text'>
-										{{ block.settings.text }}
-									</div>
+									</a>
 								{%- endif -%}
-							</div>
-						{%- endfor -%}
+							{%- endfor -%}
+						</div>
+						{%- assign first_block = image_link_blocks.first -%}
+						{%- if first_block.settings.text != blank and first_block.settings.link != blank -%}
+							<a
+								href='{{ first_block.settings.link }}'
+								class='aic__image-gallery-text-link'
+								{% if first_block.settings.link.type == 'external_link' %}
+									target='_blank'
+									rel='noopener noreferrer'
+								{% endif %}
+							>
+								{{ first_block.settings.text }}
+							</a>
+						{%- endif -%}
 					</div>
 				{%- endif -%}
 			{%- endif -%}
