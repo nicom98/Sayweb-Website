@@ -1086,7 +1086,8 @@
       "settings": {
         "collection": "referenzen",
         "product_list": [],
-        "products_per_page": 4,
+        "products_per_page": 3,
+        "show_price": false,
         "columns": 3,
         "sort": "alphabetical",
         "image_ratio": "1/1",
