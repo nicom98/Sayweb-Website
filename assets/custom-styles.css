@@ -1,0 +1,51 @@
+@media (min-width: 1360px) {
+    .container-xxl, .shopify-policy__container-xxl, .container-xl, .shopify-policy__container-xl, .container-lg, .shopify-policy__container-lg, .container-md, .shopify-policy__container-md, .container-sm, .shopify-policy__container-sm, .container, .shopify-policy__container {
+        max-width: 1450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-wrapper.container .header {
+        margin: 3.2rem 0;
+border-radius: 4.2rem;
+    }
+}
+
+.header__icons {
+display: none;
+}
+
+.button {
+border-radius: 4.2rem;
+}
+
+@media screen and (min-width: 1760px) {
+    .aic--right .aic__info {
+margin-left: unset !important;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .aic--right .aic__info {
+        padding-left: unset;
+    }
+}
+
+.image-with-text__column {
+    flex-direction: row !important;
+    column-gap: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .image-with-text__column-icon--recommended .icon {
+        font-size: 2.9rem !important;
+    }
+}
+
+.image-with-text__column-title {
+font-weight: 400;
+}
+
+.multicolumn-card__image-wrapper--image img {
+border-radius: 100%;
+}
