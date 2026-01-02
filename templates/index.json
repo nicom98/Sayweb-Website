@@ -12,6 +12,15 @@
     "animated_image_collage_AY89mD": {
       "type": "animated-image-collage",
       "blocks": {
+        "icon_with_text_dah6dA": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "check-1",
+            "icon_fill_type": "solid",
+            "heading": "Erstellung oder Überarbeitung",
+            "text": ""
+          }
+        },
         "column_w6Fwbb": {
           "type": "column",
           "settings": {
@@ -84,6 +93,7 @@
         }
       },
       "block_order": [
+        "icon_with_text_dah6dA",
         "column_w6Fwbb",
         "column_HpTTrm",
         "column_dGcRDE",
@@ -121,7 +131,7 @@
         "word_break": false,
         "heading_animation": "none",
         "word_break_an": false,
-        "text": "Erstellung oder Überarbeitung\nMigration und erfolgreicher Relaunch\nLaufende Optimierung und fachkundige Beratung",
+        "text": "",
         "enable_subscribe": false,
         "button_label_subscribe": "Shop Now",
         "color_scheme_subscribe": "",
