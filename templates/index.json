@@ -1203,10 +1203,28 @@
             "button_link": "",
             "button_style": "simple"
           }
+        },
+        "column_HfazVE": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/sayweb-youtube-kanal-shopify.png",
+            "enable_link": true,
+            "link": "https://www.youtube.com/@nico_muenster",
+            "heading": "Video-Tutorials: Shopify leicht gemacht",
+            "text": "<p>Auf unserem YouTube-Kanal erwarten dich kompakte Video-Guides und Live-Demos zu Shopify – perfekt, um Schritt für Schritt deinen Onlineshop erfolgreich aufzubauen und zu optimieren.</p>",
+            "show_button": false,
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style": "simple"
+          }
         }
       },
       "block_order": [
-        "column_6DUCQN"
+        "column_6DUCQN",
+        "column_HfazVE"
       ],
       "name": "t:sections.multicolumn.name",
       "settings": {
