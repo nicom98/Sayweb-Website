@@ -12,6 +12,53 @@
     "animated_image_collage_AY89mD": {
       "type": "animated-image-collage",
       "blocks": {
+        "image_link_wKRGUF": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/irene-issajew.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "image_link_LqNgg9": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/dirk-koenig-baumschule-pflanzen-e1744993495597.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "image_link_GP6dTf": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/Schattiernetz_Sonnenschutz_Sichtschutznetz_Schattiergewebe_Sichtschutz_Bsp_1-e1744993393862.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "image_link_WRTTDM": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/knut-burchard-startseite-hero-e1745399013902.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "image_link_PA69ng": {
+          "type": "image_link",
+          "settings": {
+            "image": "shopify://shop_images/tobias-muenster-gnbf-bodybuilding-scaled-e1745399078268.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "image_link_P4TMLx": {
+          "type": "image_link",
+          "settings": {
+            "text": "Link text",
+            "link": ""
+          }
+        },
         "icon_with_text_dah6dA": {
           "type": "icon_with_text",
           "settings": {
@@ -111,6 +158,12 @@
         }
       },
       "block_order": [
+        "image_link_wKRGUF",
+        "image_link_LqNgg9",
+        "image_link_GP6dTf",
+        "image_link_WRTTDM",
+        "image_link_PA69ng",
+        "image_link_P4TMLx",
         "icon_with_text_dah6dA",
         "icon_with_text_CHWfBX",
         "icon_with_text_GmhYEq",
