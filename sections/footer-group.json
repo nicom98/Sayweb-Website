@@ -19,7 +19,7 @@
           "settings": {
             "logo": "{{ shop.brand.logo }}",
             "logo_width": 150,
-            "description": "Bringing you exceptional quality and thoughtful design—crafted to elevate your daily life and deliver inspiration every moment."
+            "description": "<a href=\"tel:+491637299347\">+491637299347</a><a href=\"mailto:kontakt@sayweb.de\">kontakt@sayweb.de</a>"
           }
         },
         "footer-1": {
