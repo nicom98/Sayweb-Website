@@ -208,7 +208,7 @@
         "text": "",
         "enable_subscribe": false,
         "button_label_subscribe": "Shop Now",
-        "color_scheme_subscribe": "",
+        "color_scheme_subscribe": "background-2",
         "enable_box_shadow": true,
         "button_style_subscribe": "primary",
         "show_button": true,
@@ -288,7 +288,7 @@
       "name": "t:sections.logo-list.name",
       "settings": {
         "layout": "horizontal-carousel",
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "enable_border": false,
         "border_full": false,
         "subheading": "",
