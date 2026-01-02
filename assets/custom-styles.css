@@ -338,20 +338,17 @@ border-radius: 100%;
 
   /* Heading Image */
 .aic__heading-image {
-    margin-bottom: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-color: #F7F7F7;
+    border-radius: 90px;
+    padding: 5px 10px;
   }
   
   .aic__heading-image img {
+    width: 200px;
     max-width: 100%;
     height: auto;
     display: block;
-  }
-  
-  @media screen and (min-width: 750px) {
-    .aic__heading-image {
-      margin-bottom: 3.2rem;
-    }
   }
