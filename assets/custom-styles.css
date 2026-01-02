@@ -176,3 +176,38 @@ border-radius: 100%;
         padding-block: unset;
     }
 }
+
+/* Icon with Text Blocks */
+.aic__icon-text-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+  }
+  
+  .aic__icon-text-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .aic__icon-text-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .aic__icon-text-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  
+  .aic__icon-text-heading {
+    margin: 0;
+  }
+  
+  .aic__icon-text-text {
+    margin: 0;
+  }

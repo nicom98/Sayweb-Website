@@ -55,20 +55,22 @@
 					<div class='aic__icon-text-blocks'>
 						{%- for block in icon_text_blocks -%}
 							<div class='aic__icon-text-item' {{ block.shopify_attributes }}>
-								{%- if block.settings.icon != 'none' -%}
-									<div
-										class='aic__icon-text-icon aic__icon-text-icon--{{- section.settings.icon_size }} {% if section.settings.box_shadow %}aic__icon-text-icon--shadow{% endif %} aic__icon-text-icon--{{- section.settings.icon_style }} aic__icon-text-icon--{{- block.settings.icon_fill_type }}'
-									>
-										<i
-											class='icon icon-pack icon-{{ block.settings.icon }} {% if section.settings.icon_style == 'colored' and block.settings.icon_fill_type == 'gradient' %} text-gradient {% endif %}'
-										></i>
-									</div>
-								{%- endif -%}
-								{%- if block.settings.heading != blank -%}
-									<div class='aic__icon-text-heading h5'>
-										{{ block.settings.heading }}
-									</div>
-								{%- endif -%}
+								<div class='aic__icon-text-header'>
+									{%- if block.settings.icon != 'none' -%}
+										<div
+											class='aic__icon-text-icon aic__icon-text-icon--{{- section.settings.icon_size }} {% if section.settings.box_shadow %}aic__icon-text-icon--shadow{% endif %} aic__icon-text-icon--{{- section.settings.icon_style }} aic__icon-text-icon--{{- block.settings.icon_fill_type }}'
+										>
+											<i
+												class='icon icon-pack icon-{{ block.settings.icon }} {% if section.settings.icon_style == 'colored' and block.settings.icon_fill_type == 'gradient' %} text-gradient {% endif %}'
+											></i>
+										</div>
+									{%- endif -%}
+									{%- if block.settings.heading != blank -%}
+										<div class='aic__icon-text-heading h5'>
+											{{ block.settings.heading }}
+										</div>
+									{%- endif -%}
+								</div>
 								{%- if block.settings.text != blank -%}
 									<div class='aic__icon-text-text'>
 										{{ block.settings.text }}
@@ -2221,7 +2223,7 @@
 						}
 					],
 					"default": "solid",
-					"label": "t:sections.all.icon_fill_type.label"
+					"label": "Icon fill type"
 				},
 				{
 					"type": "text",
