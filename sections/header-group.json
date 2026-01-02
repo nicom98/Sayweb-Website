@@ -19,7 +19,7 @@
           "settings": {
             "color_scheme": "background-3",
             "text": "<a href=\"mailto:kontakt@sayweb.de\" title=\"mailto:kontakt@sayweb.de\">kontakt@sayweb.de</a>",
-            "icon": "none",
+            "icon": "chats",
             "icon_color_scheme": "background-1",
             "icon_style": "colored",
             "icon_fill_type": "gradient"
