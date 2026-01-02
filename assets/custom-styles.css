@@ -397,10 +397,6 @@ border-radius: 100%;
     border-radius: 0;
 }
 
-.hero__content--bottom {
-    justify-content: center;
-}
-
 @media (min-width: 1200px) {
     .hero .hero__outer--horizontal .hero__image,
     .hero__outer--horizontal .hero__image {
