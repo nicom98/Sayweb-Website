@@ -1374,12 +1374,21 @@
             "answer": "<p>Nein, obwohl wir in Hannover und Hildesheim ansässig sind, arbeiten wir mit Kunden aus ganz Deutschland. Für lokale Kunden bieten wir auch persönliche Beratung vor Ort an.</p>",
             "opened": false
           }
+        },
+        "accordion_7rDa6Q": {
+          "type": "accordion",
+          "settings": {
+            "question": "Bietet ihr auch Support nach der Fertigstellung des Shops?",
+            "answer": "<p>Ja, wir bieten langfristigen Support und kontinuierliche Optimierung für Deinen Shopify-Shop an. Außerdem arbeiten wir als <a href=\"/pages/shopify-entwickler\" title=\"Shopify Entwickler\">Shopify Theme Entwickler</a>. Unser Ziel ist immer eine langfristige Partnerschaft mit unseren Kunden.</p>",
+            "opened": false
+          }
         }
       },
       "block_order": [
         "accordion_HAqUEB",
         "accordion_HqArJh",
-        "accordion_rEqjD4"
+        "accordion_rEqjD4",
+        "accordion_7rDa6Q"
       ],
       "name": "t:sections.collapsible-content.name",
       "settings": {
