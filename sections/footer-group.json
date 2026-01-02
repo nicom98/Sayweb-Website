@@ -47,13 +47,13 @@
       "settings": {
         "color_scheme": "background-3",
         "content_alignment": "left",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
         "show_social": true,
         "enable_copyright_date": true,
         "enable_copyright_shopname": true,
-        "menu_bottom": "footer",
+        "menu_bottom": "",
         "show_policy": true,
         "enable_follow_on_shop": true
       }
