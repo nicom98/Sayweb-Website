@@ -91,6 +91,7 @@
         "custom_button_text": "Kontakt",
         "custom_button_link": "shopify://pages/contact",
         "custom_button_style": "primary",
+        "custom_button_color_scheme": "background-2",
         "search_color_scheme": "",
         "enable_box_shadow": true,
         "collection_list": [],
