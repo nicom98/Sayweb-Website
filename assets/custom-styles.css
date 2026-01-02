@@ -17,6 +17,10 @@ border-radius: 4.2rem;
     }
 }
 
+.header__column {
+    margin-left: unset;
+}
+
 .header__icons {
 display: none;
 }
@@ -352,3 +356,34 @@ border-radius: 100%;
     height: auto;
     display: block;
   }
+
+  /* Fade-Effekt für vertikale Marquees (oben und unten) */
+.aic__marquee.marquee-down,
+.aic__marquee.marquee-up {
+  position: relative;
+}
+
+.aic__marquee.marquee-down::before,
+.aic__marquee.marquee-down::after,
+.aic__marquee.marquee-up::before,
+.aic__marquee.marquee-up::after {
+  content: "";
+  width: 100%;
+  height: 17%;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.aic__marquee.marquee-down::before,
+.aic__marquee.marquee-up::before {
+  background: linear-gradient(180deg, rgb(var(--color-background)) 15%, rgba(0, 0, 0, 0) 100%);
+  top: -0.2rem;
+}
+
+.aic__marquee.marquee-down::after,
+.aic__marquee.marquee-up::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(var(--color-background)) 100%);
+  bottom: -0.2rem;
+}
