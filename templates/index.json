@@ -1006,7 +1006,7 @@
         "mobile_image_position": "after",
         "mobile_image_overlay": "overlay",
         "horizontal_alignment": "center",
-        "vertical_alignment": "bottom",
+        "vertical_alignment": "middle",
         "padding_top": "xs",
         "padding_bottom": "m"
       }
@@ -1041,7 +1041,7 @@
         "mobile_image_position": "after",
         "mobile_image_overlay": "overlay",
         "horizontal_alignment": "center",
-        "vertical_alignment": "bottom",
+        "vertical_alignment": "middle",
         "padding_top": "xs",
         "padding_bottom": "m"
       }
@@ -1413,7 +1413,7 @@
         "layout": "background",
         "color_scheme": "",
         "enable_border": false,
-        "border_full": true,
+        "border_full": false,
         "subheading": "",
         "subheading_style": "subtitle",
         "subheading_icon": "none",
