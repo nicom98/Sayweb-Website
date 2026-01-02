@@ -185,7 +185,7 @@
         "header_overlay": false,
         "header_transparent": false,
         "column_to_show": 1,
-        "opacity_overlay": 0.3,
+        "opacity_overlay": 0,
         "full_width": false,
         "icon": "none",
         "icon_color_scheme": "background-1",
