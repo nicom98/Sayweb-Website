@@ -1298,12 +1298,33 @@
             "caption_text_3": "Shop Now",
             "caption_icon_3": "check-2"
           }
+        },
+        "users_xgkKKg": {
+          "type": "users",
+          "settings": {
+            "user_text": "Nico Münster\nGeschäftsführer von Sayweb"
+          }
+        },
+        "buttons_DaM46A": {
+          "type": "buttons",
+          "settings": {
+            "show_button_1": true,
+            "button_label_1": "Jetzt kontaktieren",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_1": "primary",
+            "show_button_2": false,
+            "button_label_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
         }
       },
       "block_order": [
         "title_KgrgyW",
         "description_KygV6Q",
-        "captions_tF7qQH"
+        "captions_tF7qQH",
+        "users_xgkKKg",
+        "buttons_DaM46A"
       ],
       "name": "t:sections.hero.name",
       "settings": {
