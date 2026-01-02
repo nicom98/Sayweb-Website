@@ -1045,6 +1045,40 @@
         "padding_top": "xs",
         "padding_bottom": "m"
       }
+    },
+    "image_banner_DDgVnD": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/vipibax-deko-smartphones.jpg",
+        "enable_link": false,
+        "link": "",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
     }
   },
   "order": [
@@ -1062,6 +1096,7 @@
     "multicolumn_UEN4Gz",
     "rich_text_4y7JPW",
     "hero_rYXegy",
-    "hero_A4rTg4"
+    "hero_A4rTg4",
+    "image_banner_DDgVnD"
   ]
 }
