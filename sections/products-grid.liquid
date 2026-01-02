@@ -156,14 +156,6 @@
 					%}
 				</div>
 			{% endif %}
-			{%- if section.settings.button_show -%}
-				{% render 'button',
-					link: btn_link,
-					label: section.settings.button_label,
-					style: section.settings.button_style,
-					class: 'products-grid'
-				%}
-			{%- endif -%}
 			<div class='products-grid full-width content'>
 				<ul
 					id='products-grid'
@@ -208,6 +200,16 @@
 				</ul>
 			</div>
 		</div>
+		{%- if section.settings.button_show -%}
+			<div class='products-grid__button-wrapper'>
+				{% render 'button',
+					link: btn_link,
+					label: section.settings.button_label,
+					style: section.settings.button_style,
+					class: 'products-grid'
+				%}
+			</div>
+		{%- endif -%}
 	</div>
 </div>
 
