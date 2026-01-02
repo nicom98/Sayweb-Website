@@ -21,6 +21,24 @@
             "text": ""
           }
         },
+        "icon_with_text_CHWfBX": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "check-1",
+            "icon_fill_type": "solid",
+            "heading": "Migration und erfolgreicher Relaunch",
+            "text": ""
+          }
+        },
+        "icon_with_text_GmhYEq": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "check-1",
+            "icon_fill_type": "solid",
+            "heading": "Laufende Optimierung und fachkundige Beratung",
+            "text": ""
+          }
+        },
         "column_w6Fwbb": {
           "type": "column",
           "settings": {
@@ -94,6 +112,8 @@
       },
       "block_order": [
         "icon_with_text_dah6dA",
+        "icon_with_text_CHWfBX",
+        "icon_with_text_GmhYEq",
         "column_w6Fwbb",
         "column_HpTTrm",
         "column_dGcRDE",
