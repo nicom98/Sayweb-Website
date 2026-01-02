@@ -1109,6 +1109,80 @@
         "padding_top": "l",
         "padding_bottom": "l"
       }
+    },
+    "steps_XaYzNQ": {
+      "type": "steps",
+      "blocks": {
+        "step_JfyfKm": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Here can be your story title",
+            "text": "Simply complete this step to get started!",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_d4d9Jz": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Here can be your story title",
+            "text": "Simply complete this step to get started!",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_QWYNg6": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Here can be your story title",
+            "text": "Simply complete this step to get started!",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_JfyfKm",
+        "step_d4d9Jz",
+        "step_QWYNg6"
+      ],
+      "name": "t:sections.steps.name",
+      "settings": {
+        "layout": "collapsible",
+        "enable_arrows": true,
+        "color_scheme": "",
+        "subheading": "Show steps",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Discover key steps in the process",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Learn more about each step, including important details, actions, and outcomes",
+        "text_align": "center",
+        "columns_to_show": 3,
+        "image_ratio": "landscape",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
     }
   },
   "order": [
@@ -1128,6 +1202,7 @@
     "hero_rYXegy",
     "hero_A4rTg4",
     "image_banner_DDgVnD",
-    "products_grid_HHUq9L"
+    "products_grid_HHUq9L",
+    "steps_XaYzNQ"
   ]
 }
