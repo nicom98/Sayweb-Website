@@ -1198,7 +1198,7 @@
             "link": "shopify://pages/web-guide",
             "heading": "Tipps zu Shopify & SEO",
             "text": "<p>In unserem Blog findest du praxisnahe Anleitungen, bewährte Strategien und aktuelle Trends rund um Shopify, WordPress und Suchmaschinenoptimierung – damit dein Onlineshop und deine Website optimal performen.</p>",
-            "show_button": true,
+            "show_button": false,
             "button_label": "Learn More",
             "button_link": "",
             "button_style": "simple"
