@@ -1050,7 +1050,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "color_scheme": "",
         "image": "shopify://shop_images/vipibax-deko-smartphones.jpg",
         "enable_link": false,
