@@ -1253,7 +1253,7 @@
         "icon_size": "recommended",
         "box_shadow": true,
         "icon_style": "colored",
-        "image_width": "medium",
+        "image_width": "full-width",
         "image_ratio": "square",
         "object_fit": "cover",
         "card_heading_size": "h4",
