@@ -1354,24 +1354,24 @@
         "accordion_HAqUEB": {
           "type": "accordion",
           "settings": {
-            "question": "Here can be a commonly asked question about your product or service.",
-            "answer": "<p>Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.</p>",
+            "question": "Wie viel kostet die Erstellung oder Migration eines Shopify Shops bei euch?",
+            "answer": "<p>Jedes Shopify Projekt ist individuell und verschieden umfangreich. Deshalb variieren die Preise hier sehr stark. Wir geben Dir gerne eine Einschätzung für Dein Projekt.</p>",
             "opened": true
           }
         },
         "accordion_HqArJh": {
           "type": "accordion",
           "settings": {
-            "question": "Here can be a commonly asked question about your product or service.",
-            "answer": "<p>Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.</p>",
+            "question": "Wie lange dauert es, bis mein Shopify-Shop fertig ist?",
+            "answer": "<p>Die Dauer hängt von der Komplexität des Projekts ab. Einfache Shops können in wenigen Wochen erstellt werden, während umfangreichere Projekte mehre Wochen in Anspruch nehmen können. Wir besprechen den Zeitrahmen individuell mit jedem Kunden.</p>",
             "opened": false
           }
         },
         "accordion_rEqjD4": {
           "type": "accordion",
           "settings": {
-            "question": "Here can be a commonly asked question about your product or service.",
-            "answer": "<p>Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.</p>",
+            "question": "Arbeitet ihr nur mit Kunden aus Hannover?",
+            "answer": "<p>Nein, obwohl wir in Hannover und Hildesheim ansässig sind, arbeiten wir mit Kunden aus ganz Deutschland. Für lokale Kunden bieten wir auch persönliche Beratung vor Ort an.</p>",
             "opened": false
           }
         }
@@ -1387,10 +1387,10 @@
         "color_scheme": "",
         "enable_border": false,
         "border_full": false,
-        "subheading": "Brand introduction",
+        "subheading": "",
         "subheading_style": "subtitle",
         "subheading_icon": "none",
-        "heading": "Your FAQs title",
+        "heading": "Die häufigs­ten Fra­gen",
         "heading_size": "h2",
         "heading_level": "h2",
         "heading_line": "simple",
@@ -1398,7 +1398,7 @@
         "word_break": false,
         "heading_animation": "none",
         "word_break_an": false,
-        "text": "Easily explore FAQs, product details, or general info with collapsible content.",
+        "text": "",
         "text_align": "center",
         "row_color_scheme": "background-4",
         "padding_top": "l",
