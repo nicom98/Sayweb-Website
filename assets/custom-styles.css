@@ -387,3 +387,23 @@ border-radius: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(var(--color-background)) 100%);
   bottom: -0.2rem;
 }
+
+.hero__outer--subtle {
+    overflow: hidden;
+}
+
+.hero .hero__outer--horizontal .hero__image-inner,
+.hero__outer--horizontal .hero__image-inner {
+    border-radius: 0;
+}
+
+.hero__content--bottom {
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .hero .hero__outer--horizontal .hero__image,
+    .hero__outer--horizontal .hero__image {
+        width: 57%;
+    }
+}
