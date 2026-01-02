@@ -1400,7 +1400,7 @@
         "word_break_an": false,
         "text": "Easily explore FAQs, product details, or general info with collapsible content.",
         "text_align": "center",
-        "row_color_scheme": "",
+        "row_color_scheme": "background-4",
         "padding_top": "l",
         "padding_bottom": "l",
         "margin_top": "no-indent",
