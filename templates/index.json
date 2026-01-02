@@ -1343,7 +1343,7 @@
         "mobile_image_position": "after",
         "mobile_image_overlay": "overlay",
         "horizontal_alignment": "center",
-        "vertical_alignment": "bottom",
+        "vertical_alignment": "middle",
         "padding_top": "xs",
         "padding_bottom": "m"
       }
