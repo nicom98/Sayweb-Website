@@ -407,3 +407,53 @@ border-radius: 100%;
         width: 57%;
     }
 }
+
+.card .card__information-top,
+.card__inner .card__information-top,
+.collection-product-card .card__information-top,
+.card-wrapper .card__information-top {
+  justify-content: flex-start;
+}
+
+.card__badge {
+    justify-content: flex-end;
+}
+
+/* Custom Badge: Dunkle lila Hintergrundfarbe, weiße Icon- und Textfarbe */
+.badge.badge--custom,
+.badge--custom.badge,
+.card__badge .badge--custom,
+.badge--custom.color-background-1,
+.badge--custom.color-background-2,
+.badge--custom.color-background-3 {
+  background-color: #011624;
+  color: #FFFFFF;
+  border-color: #011624;
+}
+
+.badge.badge--custom .icon,
+.badge.badge--custom .icon-pack,
+.badge.badge--custom i,
+.badge--custom .icon,
+.badge--custom .icon-pack,
+.badge--custom i,
+.card__badge .badge--custom .icon,
+.card__badge .badge--custom .icon-pack,
+.card__badge .badge--custom i {
+  color: #FFFFFF;
+}
+
+.badge.badge--custom .icon--colored .icon,
+.badge.badge--custom .icon--colored.icon--gradient,
+.badge--custom .icon--colored .icon,
+.badge--custom .icon--colored.icon--gradient,
+.badge--custom .icon--subtle .icon,
+.badge.badge--custom .icon--subtle .icon {
+  color: #FFFFFF;
+}
+
+.card__short-description {
+    margin-top: 0.8rem;
+    color: rgba(var(--color-foreground), 0.7);
+    line-height: 1.5;
+  }
