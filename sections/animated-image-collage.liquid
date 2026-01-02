@@ -112,8 +112,10 @@
 				{%- assign image_link_blocks = section.blocks | where: 'type', 'image_link' -%}
 				{%- if image_link_blocks.size > 0 -%}
 					<div class='aic__image-gallery'>
+						{%- assign last_image_block = null -%}
 						{%- for block in image_link_blocks -%}
 							{%- if block.settings.image != blank -%}
+								{%- assign last_image_block = block -%}
 								<div class='aic__image-gallery-image-wrapper' {{ block.shopify_attributes }}>
 									<a
 										href='{{ block.settings.link }}'
@@ -137,17 +139,16 @@
 								</div>
 							{%- endif -%}
 						{%- endfor -%}
-						{%- assign last_block = image_link_blocks.last -%}
-						{%- if last_block.settings.text != blank -%}
+						{%- if last_image_block != null and last_image_block.settings.text != blank -%}
 							<a
-								href='{{ last_block.settings.link }}'
+								href='{{ last_image_block.settings.link }}'
 								class='aic__image-gallery-text'
-								{% if last_block.settings.link != blank and last_block.settings.link.type == 'external_link' %}
+								{% if last_image_block.settings.link != blank and last_image_block.settings.link.type == 'external_link' %}
 									target='_blank'
 									rel='noopener noreferrer'
 								{% endif %}
 							>
-								{{ last_block.settings.text }}
+								{{ last_image_block.settings.text }}
 							</a>
 						{%- endif -%}
 					</div>
