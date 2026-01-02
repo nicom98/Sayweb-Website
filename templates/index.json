@@ -1262,6 +1262,70 @@
         "margin_top": "no-indent",
         "margin_bottom": "no-indent"
       }
+    },
+    "hero_fKVKmp": {
+      "type": "hero",
+      "blocks": {
+        "title_KgrgyW": {
+          "type": "title",
+          "settings": {
+            "heading": "Brauchst Du Unter­stützung?",
+            "heading_size": "h1",
+            "heading_level": "h2",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false
+          }
+        },
+        "description_KygV6Q": {
+          "type": "description",
+          "settings": {
+            "description": "Lass uns gemeinsam dein digitales Potenzial entfalten und deine Online-Präsenz zukunftssicher machen. Kontaktiere uns noch heute und wir schauen uns deinen individuellen Fall gemeinsam an."
+          }
+        },
+        "captions_tF7qQH": {
+          "type": "captions",
+          "settings": {
+            "show_caption_1": true,
+            "caption_text_1": "Shop Now",
+            "caption_icon_1": "check-2",
+            "show_caption_2": true,
+            "caption_text_2": "Shop Now",
+            "caption_icon_2": "check-2",
+            "show_caption_3": true,
+            "caption_text_3": "Shop Now",
+            "caption_icon_3": "check-2"
+          }
+        }
+      },
+      "block_order": [
+        "title_KgrgyW",
+        "description_KygV6Q",
+        "captions_tF7qQH"
+      ],
+      "name": "t:sections.hero.name",
+      "settings": {
+        "layout": "horizontal",
+        "header_overlay": false,
+        "header_transparent": false,
+        "block_type": "subtle",
+        "color_scheme": "",
+        "full_screen": false,
+        "image": "shopify://shop_images/DSC02374-scaled_e84a8c0e-79d4-4471-8531-598ed7366fc3.jpg",
+        "show_video": false,
+        "overlay_opacity": 0.5,
+        "image_ratio": "adapt",
+        "object_fit": "cover",
+        "desktop_image_position": "before",
+        "mobile_image_position": "after",
+        "mobile_image_overlay": "overlay",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "xs",
+        "padding_bottom": "m"
+      }
     }
   },
   "order": [
@@ -1283,6 +1347,7 @@
     "image_banner_DDgVnD",
     "products_grid_HHUq9L",
     "steps_XaYzNQ",
-    "multicolumn_ftbfXz"
+    "multicolumn_ftbfXz",
+    "hero_fKVKmp"
   ]
 }
